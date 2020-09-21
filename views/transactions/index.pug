@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+    a(href='/books') Books
+    br
+    a(href='/users/create') New User
+    br
+    a(href='/transactions/create') New Transaction
+    br
+    br
+    ul 
+        each transaction in transactions
+            li= transaction.userId
+            

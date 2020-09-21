@@ -1,0 +1,6 @@
+extends ../layout
+
+block content
+    form(action='/users/create', method='post')
+        input(type='text', name='name', placeholder='New user')
+        input(type='submit', value='Submit')

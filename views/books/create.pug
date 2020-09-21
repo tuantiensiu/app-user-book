@@ -1,0 +1,6 @@
+extends ../layout
+
+block content
+    form(action='/books/create', method='post')
+        input(type='text', name='nameBook', value='')
+        input(type='submit', value='Submit')
