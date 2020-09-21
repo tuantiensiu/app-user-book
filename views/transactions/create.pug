@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+    form(action='/transactions/create', method='post')
+        p Select User
+        select(name="userId")
+          each user in users
+            option(value=user.id)
+              span=user.name
+        p Select Book
+        select(name="bookId")
+          each book in books
+            option(value=book.id)
+              span=book.name
+        br
+        input(type='submit', value='Create')
